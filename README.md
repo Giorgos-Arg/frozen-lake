@@ -1,0 +1,177 @@
+# frozen-lake
+
+This python program implements a reinforcement learning agent for the 
+[frozen lake](https://github.com/openai/gym/wiki/FrozenLake-v0) game.
+
+## Usage
+
+```bash
+py frozen-lake.py <environment> <algorithm> <number_of_training_episodes>
+```
+Class can be: 
+- -s for Sarsa
+- -q for Qlearning
+
+Environment can be:
+- -s for stochastic environment
+- -d for deterministic environment
+
+## Example
+
+```bash
+py frozen-lake.py -d -q 80000
+
+Using deterministic environment.
+Using Qlearning algorithm.
+Training for  80000  episodes...
+Environment has 64 states and 4 actions.
+Training done!!!
+
+========================
+ Evaluation Episode
+========================
+
+
+SFFFFFFF
+FFFFFFFF
+FFFHFFFF
+FFFFFHFF
+FFFHFFFF
+FHHFFFHF
+FHFFHFHF
+FFFHFFFG
+  (Down)
+SFFFFFFF
+FFFFFFFF
+FFFHFFFF
+FFFFFHFF
+FFFHFFFF
+FHHFFFHF
+FHFFHFHF
+FFFHFFFG
+  (Down)
+SFFFFFFF
+FFFFFFFF
+FFFHFFFF
+FFFFFHFF
+FFFHFFFF
+FHHFFFHF
+FHFFHFHF
+FFFHFFFG
+  (Down)
+SFFFFFFF
+FFFFFFFF
+FFFHFFFF
+FFFFFHFF
+FFFHFFFF
+FHHFFFHF
+FHFFHFHF
+FFFHFFFG
+  (Right)
+SFFFFFFF
+FFFFFFFF
+FFFHFFFF
+FFFFFHFF
+FFFHFFFF
+FHHFFFHF
+FHFFHFHF
+FFFHFFFG
+  (Right)
+SFFFFFFF
+FFFFFFFF
+FFFHFFFF
+FFFFFHFF
+FFFHFFFF
+FHHFFFHF
+FHFFHFHF
+FFFHFFFG
+  (Right)
+SFFFFFFF
+FFFFFFFF
+FFFHFFFF
+FFFFFHFF
+FFFHFFFF
+FHHFFFHF
+FHFFHFHF
+FFFHFFFG
+  (Right)
+SFFFFFFF
+FFFFFFFF
+FFFHFFFF
+FFFFFHFF
+FFFHFFFF
+FHHFFFHF
+FHFFHFHF
+FFFHFFFG
+  (Down)
+SFFFFFFF
+FFFFFFFF
+FFFHFFFF
+FFFFFHFF
+FFFHFFFF
+FHHFFFHF
+FHFFHFHF
+FFFHFFFG
+  (Down)
+SFFFFFFF
+FFFFFFFF
+FFFHFFFF
+FFFFFHFF
+FFFHFFFF
+FHHFFFHF
+FHFFHFHF
+FFFHFFFG
+  (Right)
+SFFFFFFF
+FFFFFFFF
+FFFHFFFF
+FFFFFHFF
+FFFHFFFF
+FHHFFFHF
+FHFFHFHF
+FFFHFFFG
+  (Down)
+SFFFFFFF
+FFFFFFFF
+FFFHFFFF
+FFFFFHFF
+FFFHFFFF
+FHHFFFHF
+FHFFHFHF
+FFFHFFFG
+  (Down)
+SFFFFFFF
+FFFFFFFF
+FFFHFFFF
+FFFFFHFF
+FFFHFFFF
+FHHFFFHF
+FHFFHFHF
+FFFHFFFG
+  (Right)
+SFFFFFFF
+FFFFFFFF
+FFFHFFFF
+FFFFFHFF
+FFFHFFFF
+FHHFFFHF
+FHFFHFHF
+FFFHFFFG
+  (Right)
+SFFFFFFF
+FFFFFFFF
+FFFHFFFF
+FFFFFHFF
+FFFHFFFF
+FHHFFFHF
+FHFFHFHF
+FFFHFFFG
+
+========================
+ Success:  goal reached!
+========================
+```
+
+## Author
+
+Giorgos Argyrides (g.aryrides@outlook.com)
